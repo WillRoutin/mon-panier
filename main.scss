@@ -1,4 +1,5 @@
 $primary : #3176DE;
+$secondary : red;
 
 html, body{
     font-size: 16px;
@@ -10,10 +11,17 @@ html, body{
 }
 
 header {
+    margin : auto;
     display:flex;
     align-items: center;
-    
+    width : 450px;
+
     h1 {
         color : $primary;
+    }
+
+    a {
+        margin-left: auto;
+        color : $secondary;
     }
 }

@@ -8,15 +8,22 @@ html, body {
 }
 
 header {
+  margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 450px;
 }
 
 header h1 {
   color: #3176DE;
+}
+
+header a {
+  margin-left: auto;
+  color: red;
 }
 /*# sourceMappingURL=main.css.map */
