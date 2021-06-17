@@ -17,13 +17,12 @@ html, body {
 }
 
 .selectproduct {
-  margin: auto;
   width: 809px;
 }
 
 .selectproduct .s-list {
   max-width: 618px;
-  margin: auto;
+  margin: 40px auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -42,6 +41,134 @@ html, body {
   margin: 15px;
   width: 176px;
   height: 176px;
+}
+
+.selectproduct .choice {
+  color: #2F4258;
+  max-width: 618px;
+  margin: auto;
+  margin-bottom: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.selectproduct .choice .productone {
+  width: 588px;
+  margin: 0 0 20 0px;
+}
+
+.selectproduct .choice .productone label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.selectproduct .choice .productone select {
+  padding: 5px;
+  height: 46px;
+  border-radius: 5px;
+  border-color: #E9F0FB;
+}
+
+.selectproduct .choice .productone #product-select {
+  width: 588px;
+}
+
+.selectproduct .choice .sizeone {
+  width: 76px;
+  margin: 0 15 20 0px;
+}
+
+.selectproduct .choice .sizeone label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.selectproduct .choice .sizeone select {
+  padding: 5px;
+  height: 46px;
+  border-radius: 5px;
+  border-color: #E9F0FB;
+}
+
+.selectproduct .choice .sizeone #size-select {
+  width: 76px;
+}
+
+.selectproduct .choice .colorone {
+  width: 240px;
+  margin: 0 0 20 15px;
+}
+
+.selectproduct .choice .colorone label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.selectproduct .choice .colorone select {
+  padding: 5px;
+  height: 46px;
+  border-radius: 5px;
+  border-color: #E9F0FB;
+}
+
+.selectproduct .choice .colorone #color-select {
+  width: 240px;
+}
+
+.selectproduct .choice .commentaryone {
+  width: 588px;
+}
+
+.selectproduct .choice .commentaryone label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.selectproduct .choice .commentaryone input {
+  padding: 5px;
+  height: 46px;
+  border-radius: 5px;
+  border-color: #E9F0FB;
+}
+
+.selectproduct .choice .commentaryone #commentary {
+  width: 588px;
+}
+
+.selectproduct footer {
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 618px;
+}
+
+.selectproduct footer p {
+  font-size: 30;
+  color: #4C5E80;
+  margin-right: auto;
+}
+
+.selectproduct footer button {
+  margin-left: auto;
+  width: 267;
+  height: 39;
+  background-color: transparent;
+  font-size: 25;
+  color: #3176DE;
+  border-radius: 5px;
+  border-color: #3176DE;
 }
 
 .sidebar {

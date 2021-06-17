@@ -17,12 +17,11 @@ html, body{
 }
 
 .selectproduct{
-    margin:auto;
     width: 809px;
 
     .s-list{
         max-width: 618px;
-        margin: auto;
+        margin: 40px auto;
         display:flex ;
         justify-content: center;
         align-content: center;
@@ -36,6 +35,125 @@ html, body{
         height : 176px;
         }
     }
+
+    .choice {
+        color : #2F4258;
+        max-width: 618px;
+        margin: auto;
+        margin-bottom: 120px;
+        display:flex ;
+        justify-content: flex-start;
+        align-content: center;
+        flex-wrap:  wrap ;
+
+        .productone{
+            width: 588px;
+            margin: 0 0 20 0px;
+
+            label{
+                margin-bottom: 5px;
+                font-weight: bold;
+            }
+
+            select {
+                padding: 5px;
+                height: 46px;
+                border-radius: 5px;
+                border-color: #E9F0FB;
+            }
+
+            #product-select{
+                width: 588px;
+            }
+        }
+
+        .sizeone{
+                width: 76px;
+                margin: 0 15 20 0px;
+    
+                label{
+                    margin-bottom: 5px;
+                    font-weight: bold;
+                }
+    
+                select {
+                    padding: 5px;
+                    height: 46px;
+                    border-radius: 5px;
+                    border-color: #E9F0FB;
+                }
+    
+                #size-select{
+                    width: 76px;
+                }
+        }
+
+        .colorone{
+                width: 240px;
+                margin: 0 0 20 15px;
+    
+                label{
+                    margin-bottom: 5px;
+                    font-weight: bold;
+                }
+    
+                select {
+                    padding: 5px;
+                    height: 46px;
+                    border-radius: 5px;
+                    border-color: #E9F0FB;
+                }
+    
+                #color-select{
+                    width: 240px;
+                }
+        }
+
+        .commentaryone{
+                width: 588px;
+    
+                label{
+                    margin-bottom: 5px;
+                    font-weight: bold;
+                }
+    
+                input{
+                    padding: 5px;
+                    height: 46px;
+                    border-radius: 5px;
+                    border-color: #E9F0FB;
+                }
+
+                #commentary{
+                    width: 588px;
+                }
+        }
+    }
+
+    footer{
+            margin : auto;
+            display:flex;
+            align-items: center;
+            width: 618px;
+        
+                p {
+                    font-size: 30;
+                    color : $tercary;
+                    margin-right: auto;
+                }
+        
+                button {
+                    margin-left: auto;
+                    width : 267;
+                    height: 39;
+                    background-color: transparent;
+                    font-size : 25;
+                    color: $primary;
+                    border-radius : 5px;
+                    border-color: $primary;
+                }
+    }
+    
 }
 
 .sidebar{
