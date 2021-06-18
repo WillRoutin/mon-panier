@@ -280,3 +280,53 @@ html, body{
         }
     }
 }
+
+.containershopping{
+    display: flex;
+    justify-content: center;
+    height : 100%;
+
+    .illustration{
+        margin-right: auto;
+        width: 50%;
+        background-image: url("assets/img/shoppingcart.jpg");
+        background-size: cover;
+        background-position: right 25% bottom 15%;
+    }
+
+    .validation{
+        background-color: white;
+        margin-left: auto;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 50%;
+
+        footer{
+            text-align: center;
+            margin : auto;
+            width: 450px;
+        
+                p {
+                    font-size: 40;
+                    margin-right: auto;
+                    margin-bottom : 54px;
+                }
+        
+                button {
+                    margin-left: auto;
+                    width : 367;
+                    height: 39;
+                    background-color: $buttoncolor;
+                    font-size : 25;
+                    color:white;
+                    border-radius : 2px;
+                    border:none;
+                }
+            }
+    }
+}
+
+
+
