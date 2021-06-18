@@ -9,20 +9,20 @@
     <body>
         <div class="container">
             <main class="selectproduct">
+                <div class="infos">
+                    <h1 id="score">4</h1>
+                </div>
                 <section class="s-list">
-                    <div class="sl-item">
-                    </div>
-                    <div class="sl-item">
-                    </div>
-                    <div class="sl-item">
-                    </div>
-                    <div class="sl-item">
-                    </div>
-                    <div class="sl-item">
-                    </div>
-                    <div class="sl-item">
-                    </div>
+                    <div class="sl-item"></div>
+                    <div class="sl-item"></div>
+                    <div class="sl-item"></div>
+                    <div class="sl-item"></div>
+                    <div class="sl-item"></div>
+                    <div class="sl-item"></div>
                 </section>
+                <div class="actions">
+                    <button onClick="addSquare()">Ajouter un bloc</button>
+                </div>
     
                 <section class="choice">
                     <div class="productone">
@@ -107,4 +107,18 @@
             </aside>
         </div>
     </body>
+
+<script>
+        function addSquare(){
+            var list = document.getElementsByClassName("sl-item");
+            document.getElementById("score").innerHTML = list.length;
+ 
+            for (let i = 0; i < list.length; i++){
+                list[i].innerHTML = "Produit ajouté";
+            }
+ 
+            console.log(list);
+            }
+</script>
+
 </html>
