@@ -80,7 +80,7 @@ html, body {
   }
 }
 
-.selectproduct .choice {
+.selectproduct #form-cart {
   color: #2F4258;
   max-width: 618px;
   margin: auto;
@@ -96,86 +96,86 @@ html, body {
       flex-wrap: wrap;
 }
 
-.selectproduct .choice .productone {
+.selectproduct #form-cart .product-name {
   width: 588px;
   margin: 0 0 20 0px;
 }
 
-.selectproduct .choice .productone label {
+.selectproduct #form-cart .product-name label {
   margin-bottom: 5px;
   font-weight: bold;
 }
 
-.selectproduct .choice .productone select {
+.selectproduct #form-cart .product-name select {
   padding: 5px;
   height: 46px;
   border-radius: 5px;
   border-color: #E9F0FB;
 }
 
-.selectproduct .choice .productone #product-select {
+.selectproduct #form-cart .product-name #product {
   width: 588px;
 }
 
-.selectproduct .choice .sizeone {
+.selectproduct #form-cart .product-size {
   width: 76px;
   margin: 0 15 20 0px;
 }
 
-.selectproduct .choice .sizeone label {
+.selectproduct #form-cart .product-size label {
   margin-bottom: 5px;
   font-weight: bold;
 }
 
-.selectproduct .choice .sizeone select {
+.selectproduct #form-cart .product-size select {
   padding: 5px;
   height: 46px;
   border-radius: 5px;
   border-color: #E9F0FB;
 }
 
-.selectproduct .choice .sizeone #size-select {
+.selectproduct #form-cart .product-size #size {
   width: 76px;
 }
 
-.selectproduct .choice .colorone {
+.selectproduct #form-cart .product-color {
   width: 240px;
   margin: 0 0 20 15px;
 }
 
-.selectproduct .choice .colorone label {
+.selectproduct #form-cart .product-color label {
   margin-bottom: 5px;
   font-weight: bold;
 }
 
-.selectproduct .choice .colorone select {
+.selectproduct #form-cart .product-color select {
   padding: 5px;
   height: 46px;
   border-radius: 5px;
   border-color: #E9F0FB;
 }
 
-.selectproduct .choice .colorone #color-select {
+.selectproduct #form-cart .product-color #color {
   width: 240px;
 }
 
-.selectproduct .choice .commentaryone {
+.selectproduct #form-cart .product-commentary {
   width: 588px;
 }
 
-.selectproduct .choice .commentaryone label {
+.selectproduct #form-cart .product-commentary label {
   margin-bottom: 5px;
   font-weight: bold;
 }
 
-.selectproduct .choice .commentaryone input {
+.selectproduct #form-cart .product-commentary input {
   padding: 5px;
   height: 46px;
   border-radius: 5px;
   border-color: #E9F0FB;
 }
 
-.selectproduct .choice .commentaryone #commentary {
+.selectproduct #form-cart .product-commentary #commentary {
   width: 588px;
 }
 
@@ -257,11 +257,11 @@ html, body {
   margin-top: 30px;
 }
 
-.sidebar .list {
+.sidebar #list {
   margin: auto;
 }
 
-.sidebar .list .l-item {
+.sidebar #list .l-item {
   margin: 10px auto;
   width: 355px;
   padding: 10 20 10 10;
@@ -269,7 +269,7 @@ html, body {
   background-color: #F6F9FE;
 }
 
-.sidebar .list .l-item .li-header {
+.sidebar #list .l-item .li-header {
   height: auto;
   font-size: 18px;
   display: -webkit-box;
@@ -280,18 +280,18 @@ html, body {
           align-items: center;
 }
 
-.sidebar .list .l-item .li-header h3 {
+.sidebar #list .l-item .li-header h3 {
   margin: 0 0 10 0;
   margin-right: auto;
 }
 
-.sidebar .list .l-item .li-header p {
+.sidebar #list .l-item .li-header p {
   margin: 0 0 10 0;
   color: #3176DE;
   margin-left: auto;
 }
 
-.sidebar .list .l-item .li-text {
+.sidebar #list .l-item .li-text {
   color: #4C5E80;
   margin: 10 0 0 0;
 }
