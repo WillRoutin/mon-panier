@@ -74,7 +74,7 @@
                     <img src="assets/img/imgproduit.jpg">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit malesuada nec odio et urna, risus. Magna blandit cras iaculis volutpat quisque. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 </section>
-                <section id="list">
+                <form id="list">
                     <div class="l-item" id="item1">
                         <div class="li-header">
                             <h3 id="lih-product">Article 1</h3>
@@ -96,9 +96,9 @@
                         </div>
                         <p class="li-text">1x Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                     </div>
-                </section>
+                </form>
                 <footer>
-                    <p class="f-totalamount">154€</p>
+                    <p id="f-totalamount">0</p>
                     <button class="f-action" type="button"><img src="assets/img/fire.png" /> Valider mon panier </button>
                 </footer>
             </aside>
@@ -118,13 +118,31 @@
         console.log(list);
     }
 
+    function updateAmount(){
+            var cartTotalAmount = document.getElementById("f-totalamount").innerHTML;
+            document.getElementById("f-totalamount").innerHTML = parseFloat(cartTotalAmount) + 34.99 + "€";
+        }
+
+    function changerTotalZero(){
+            document.getElementById("f-totalamount").innerHTML = 0 + "€";
+        }
+
     function addToCart() {
+        /*
+        var form = document.getElementById("list").elements;
+        var product = form.elements.product.value;
+        var size = form.elements.size.value;
+        var color = form.elements.color.value;
+        var commentary = form.elements.commentary.value;
+        */
+        var int = document.getElementById("f-totalamount").value;
         var product = document.getElementById("product").value;
         var size = document.getElementById("size").value;
         var color = document.getElementById("color").value;
         var commentary = document.getElementById("commentary").value;
 
         document.getElementById("list").innerHTML = document.getElementById("list").innerHTML + '<div class="l-item" id="item1"> <div class="li-header"> <h3 id="lih-product">' + product + '</h3> <p id="lih-size">' + size +' - '+ color + '</p> </div> <p id="li-color">' + commentary + '</p> </div>';
+        updateAmount();
 
         /* alert("Produit ajouté au panier !"); */
     }
@@ -134,6 +152,9 @@
         while (element.firstChild) {
             element.removeChild(element.firstChild);
             }
+        
+        changerTotalZero();
+        
     }
 
 </script>
